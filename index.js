@@ -23,7 +23,7 @@ function savetoLocalstorage(event){
         date : date ,
         time : time 
      }
-     localStorage.setItem("newObj" , JSON.stringify(myObj))
+     localStorage.setItem(myObj.email , JSON.stringify(myObj))
 
     }
 
