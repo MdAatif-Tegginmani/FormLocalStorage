@@ -24,10 +24,17 @@ function savetoLocalstorage(event){
         time : time 
      }
      localStorage.setItem(myObj.email , JSON.stringify(myObj))
-
+     saveNewUserOnScreen(myObj)
+        
     }
 
+    function saveNewUserOnScreen(user){
+        const d=document.getElementById('listOfUsers');
+        const li= `<li> ${user.name} - ${user.email} - ${user.phone} - ${user.date} - ${user.time} </li>`
 
+       d.innerHTML = d.innerHTML + li;
+
+    }
 
 
 
