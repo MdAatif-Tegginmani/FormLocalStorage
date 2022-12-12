@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Form</title>
+  </head>
+  <body>
+    <form onsubmit="savetoLocalstorage(event)">
+        <div class="heading">
+            <h1>Book a call</h1>
+            <h5>Book a call slot and our representative will call you within 1hr of selected time </h5>
+        </div>
+        <hr>
+      <div class="data">
+          <div class="mb-3">
+            <label  class="form-label">Name:</label>
+            <input type="text" name="" id="name">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="emailID" />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Phone:</label>
+            <input type="number" class="form-control" id="phone" />
+          </div>
+          <div class="mb-3 " id="date-time">
+            <label for="exampleInputPassword1" class="form-label">Time for call:</label><br>
+            <input type="date" class="form-control w-50 " id="date" />
+            <input type="time" name="" id="time">
+        </div>
+        <button type="submit" class="btn btn-primary">GIVE A CALL</button>
+      </div>
+
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
